@@ -1,0 +1,248 @@
+.dashboard-container {
+    min-height: 100vh;
+    background-color: #0c1220;
+    color: #e2e8f0;
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+  }
+  
+  .dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(148, 163, 184, 0.2);
+  }
+  
+  .logo-area h1 {
+    color: #4ade80;
+    margin: 0;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+  }
+  
+  .subtitle {
+    color: #94a3b8;
+    font-size: 0.9rem;
+  }
+  
+  .user-info {
+    text-align: right;
+  }
+  
+  .welcome-text {
+    display: block;
+    color: #e2e8f0;
+    font-size: 1rem;
+    margin-bottom: 5px;
+  }
+  
+  .status-text {
+    display: block;
+    font-size: 0.8rem;
+    color: #4ade80;
+  }
+  
+  .alert-message {
+    padding: 12px 20px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    animation: pulse 2s infinite;
+  }
+  
+  .alert-message.warning {
+    background-color: rgba(245, 158, 11, 0.2);
+    color: #f59e0b;
+    border-left: 4px solid #f59e0b;
+  }
+  
+  .alert-message.critical {
+    background-color: rgba(239, 68, 68, 0.2);
+    color: #ef4444;
+    border-left: 4px solid #ef4444;
+  }
+  
+  @keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.7; }
+    100% { opacity: 1; }
+  }
+  
+  .dashboard-content {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .left-panel, .right-panel {
+    flex: 1;
+  }
+  
+  .section-title {
+    margin-bottom: 20px;
+  }
+  
+  .section-title h2 {
+    color: #e2e8f0;
+    margin: 0 0 5px 0;
+    font-size: 1.4rem;
+  }
+  
+  .section-subtitle {
+    color: #94a3b8;
+    font-size: 0.9rem;
+  }
+  
+  .firewalls-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .ai-system {
+    background-color: rgba(15, 23, 42, 0.7);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(74, 222, 128, 0.2);
+  }
+  
+  .ai-status {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: rgba(30, 41, 59, 0.5);
+    border-radius: 6px;
+  }
+  
+  .status-label {
+    color: #94a3b8;
+    font-size: 0.9rem;
+    margin-right: 10px;
+  }
+  
+  .status-value {
+    color: #e2e8f0;
+    font-weight: bold;
+  }
+  
+  .ai-metrics {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .metric {
+    flex: 1;
+    padding: 15px;
+    background-color: rgba(30, 41, 59, 0.5);
+    border-radius: 6px;
+    text-align: center;
+  }
+  
+  .metric-label {
+    display: block;
+    color: #94a3b8;
+    font-size: 0.8rem;
+    margin-bottom: 5px;
+  }
+  
+  .metric-value {
+    display: block;
+    color: #e2e8f0;
+    font-size: 1.6rem;
+    font-weight: bold;
+  }
+  
+  .metric-value.high {
+    color: #ef4444;
+  }
+  
+  .intruder-info {
+    background-color: rgba(15, 23, 42, 0.7);
+    border-radius: 10px;
+    padding: 20px;
+    border: 1px solid rgba(239, 68, 68, 0.3);
+    animation: fadeIn 0.5s ease-out;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .intruder-info h3 {
+    color: #ef4444;
+    margin-top: 0;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+  }
+  
+  .intruder-data {
+    background-color: rgba(30, 41, 59, 0.5);
+    border-radius: 6px;
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+  
+  .data-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(148, 163, 184, 0.2);
+  }
+  
+  .data-item:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+  
+  .data-label {
+    color: #94a3b8;
+    font-size: 0.9rem;
+  }
+  
+  .data-value {
+    color: #e2e8f0;
+    font-weight: bold;
+  }
+  
+  .action-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .block-button, .report-button {
+    flex: 1;
+    padding: 10px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .block-button {
+    background-color: #ef4444;
+    color: white;
+    border: none;
+  }
+  
+  .block-button:hover {
+    background-color: #dc2626;
+  }
+  
+  .report-button {
+    background-color: transparent;
+    color: #e2e8f0;
+    border: 1px solid #94a3b8;
+  }
+  
+  .report-button:hover {
+    background-color: rgba(148, 163, 184, 0.1);
+  }
+  
